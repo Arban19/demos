@@ -1,7 +1,9 @@
 import math
 
 def max_number(numbers):
-    """ this function returns the max number from a list of numbers """
+    """ this function returns the max number from a list of numbers; if given an empty list it returns none """
+    if len(numbers)==0:
+        return None
     largest_number = -math.inf
     for number in numbers:
         if number>largest_number:
@@ -10,7 +12,9 @@ def max_number(numbers):
 
 
 def min_number(numbers):
-    """ this function returns the min number from a list of numbers"""
+    """ this function returns the min number from a list of numbers; if given an empty list it returns none"""
+    if len(numbers)==0:
+        return None
     min_number = math.inf
     for number in numbers:
         if number<min_number:
@@ -26,17 +30,21 @@ print("The smallest number in the date set is " +str(answer_min_number)+ ".")
 
 
 def sum_list(numbers):
-    """ This function adds the numbers in a list"""
+    """ This function adds the numbers in a list; if given an empty list it returns none"""
+    if len(numbers)==0:
+        return None
     sum = 0
     for number in numbers:
         sum += number
     return sum
-        
+
 answer = sum_list([2,3,4,5,6])
 print(answer)
 
 def product_list(numbers):
-    """This function multiplies numbers in a list """
+    """This function multiplies numbers in a list; if given an empty list it returns none"""
+    if len(numbers)==0:
+        return None
     product = 1
     for number in numbers:
         product *= number
