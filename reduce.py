@@ -2,22 +2,22 @@ import math
 
 def max_number(numbers):
     """ this function returns the max number from a list of numbers; if given an empty list it returns none """
-    if len(numbers)==0:
-        return None
+    if not numbers:
+        return "Enter number."
     largest_number = -math.inf
     for number in numbers:
-        if number>largest_number:
-            largest_number = number
+        largest_number = number if  number>largest_number else largest_number
     return largest_number
+
+max_number([12,24,33])
 
 def min_number(numbers):
     """ this function returns the min number from a list of numbers; if given an empty list it returns none"""
-    if len(numbers)==0:
+    if not numbers:
         return None
     min_number = math.inf
     for number in numbers:
-        if number<min_number:
-            min_number=number
+        min_number = number if number<min_number else min_number
     return min_number
 
 def sum_list(numbers):
