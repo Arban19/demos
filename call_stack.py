@@ -1,6 +1,3 @@
-def next_digit(number):
-    return append(number)
-
 def increment(number):
     return number + 1
 
@@ -13,8 +10,8 @@ def append(number):
         appended_number = str(number) + "0"
         return appended_number
 
-assert next_digit("6") == "67"
-assert next_digit("12") == "123"
-assert next_digit("713") == "7134"
-assert next_digit("9") == "90"
+assert append("6") == "67"
+assert append("12") == "123"
+assert append("713") == "7134"
+assert append("9") == "90"
 print("All tests passed!")
