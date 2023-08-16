@@ -9,8 +9,6 @@ def max_number(numbers):
         largest_number = number if  number>largest_number else largest_number
     return largest_number
 
-max_number([12,24,33])
-
 def min_number(numbers):
     """ this function returns the min number from a list of numbers; if given an empty list it returns none"""
     if not numbers:
