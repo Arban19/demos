@@ -5,7 +5,7 @@ def is_prime(x):
         return True
     elif x%2 == 0:
         return False
-    for i in range(3,x):
+    for i in range(3,x,2):
         if x % i == 0:
             return False
     return True
@@ -18,3 +18,4 @@ assert is_prime(-11) == False
 assert is_prime(0) == False
 assert is_prime(100) == False
 assert is_prime(29) == True
+print("Works!")
