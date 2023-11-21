@@ -3,13 +3,9 @@ def is_prime(x):
         return False
     elif x == 2:
         return True
-    elif x%2 == 0:
-        return False
-
-    for i in range(3,x,2):
-        if x % i == 0:
+    for i in range(3,x):
+        if x % i == 0 or x % 2 == 0:
             return False
-
     return True
 
 
