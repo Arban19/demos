@@ -6,5 +6,5 @@ def func2():
     print("func2")
     return 0
 
-print(func2() or func1())
-print(func1() and func2())
+print(func2() and func1())
+print(func1() or func2())
