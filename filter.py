@@ -53,3 +53,14 @@ def males(x):
     return x["gender"] == "male"
 
 # print(filter(people,males))
+
+""" Notes
+
+Output list will always be equal to or less than in length compared to input list
+
+the custom code (fn) always has to return a bool-- this type of a function is called a predicate
+
+data type of input list items is the same as the output list items
+
+
+"""

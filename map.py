@@ -47,3 +47,13 @@ def years(detail):
     return detail["age"]
 
 # print(map(people,years))
+
+""" Notes
+
+The length of the output will the same as the length of the input
+
+custom code (fn) performs some transformation on the input which is appended to the output
+
+data type of the output item is not the same as the data type of the input item but the data type after transformation
+
+"""

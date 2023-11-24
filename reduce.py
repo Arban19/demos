@@ -37,8 +37,6 @@ def product_list(numbers):
     return product
 
 def reduce(ls, fn, initial):
-    # if not numbers:
-    #     return None
     aggregate = initial
     for item in ls:
         aggregate = fn(aggregate, item)
@@ -78,7 +76,7 @@ assert reduce([111,22,33,55,9],first,None) == 111
 
 the output will be a single reduced value
 
-the custom function(fn)
+the custom code (fn) operates on the current aggregate and the item to produce a new aggregate
 
 the data type of the output would not necessarily be the same as the data type of the input items
 
