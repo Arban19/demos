@@ -49,7 +49,7 @@ def digit_strng(x):
 
 # print(filter(["duke","sam","123","33","2swe"],digit_strng))
 
-def males(x):
+def is_male(x):
     return x["gender"] == "male"
 
 # print(filter(people,males))
