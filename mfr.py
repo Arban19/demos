@@ -19,6 +19,7 @@ characters = [
     {"name": "Bellatrix Lestrange", "house": "Slytherin", "gender": "Female", "age": 47},
     {"name": "Voldemort", "house": "Slytherin", "gender": "Male", "age": 71},
 ]
+
 def sum_male_age(data):
     sum = 0
     for character in data:
@@ -40,8 +41,6 @@ def age(item):
     return item["age"]
 
 # print(list(map(age,characters)))
-
-from functools import reduce
 
 def total_age(x,y):
     return x + y
