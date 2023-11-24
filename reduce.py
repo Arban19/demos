@@ -36,12 +36,12 @@ def product_list(numbers):
         product *= number
     return product
 
-def reduce(numbers, fn, initial):
-    if not numbers:
-        return None
+def reduce(ls, fn, initial):
+    # if not numbers:
+    #     return None
     aggregate = initial
-    for number in numbers:
-        aggregate = fn(aggregate, number)
+    for item in ls:
+        aggregate = fn(aggregate, item)
     return aggregate
 
 def plus(a,b):
@@ -73,3 +73,13 @@ def first(aggregate, number):
         return aggregate
 
 assert reduce([111,22,33,55,9],first,None) == 111
+
+""" Notes
+
+the output will be a single reduced value
+
+the custom function(fn)
+
+the data type of the output would not necessarily be the same as the data type of the input items
+
+"""
