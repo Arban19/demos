@@ -7,3 +7,12 @@ def foo():
 print(z)
 foo()
 print(z)
+
+
+def bar(x):
+    local_print = lambda x: print(x)
+    local_print(10)
+    print(x)
+
+
+bar(5)
